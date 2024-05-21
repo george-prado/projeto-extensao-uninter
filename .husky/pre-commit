@@ -1,4 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
+echo -e "\033[0;33m[ LINT-STAGED - INITIALIZING ]\033[0m"
 npx lint-staged
+echo -e "\033[0;32m[ LINT-STAGED - FINISH ]\033[0m"
