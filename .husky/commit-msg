@@ -1,0 +1,4 @@
+echo -e "\033[0;33m[ COMMITLINT - INITIALIZING ]\033[0m"
+npx --no -- commitlint --edit \
+
+echo -e "\033[0;32m[ COMMITLINT - FINISH ]\033[0m"
