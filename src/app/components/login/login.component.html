@@ -1,0 +1,24 @@
+<section class="login-component">
+    <form [formGroup]="form" (submit)="login()" class="form-field">
+        <div class="inputs-container">
+            <div class="input-column email-input">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" required matInput type="email" >
+            </div>
+
+            <div class="input-column password-input">
+                <mat-label>Senha</mat-label>
+                <input formControlName="password" required type="password" matInput>
+            </div>
+
+            <!-- Get the error code returned from the service, and display the user error message -->
+            @if (form.invalid) {
+                <mat-error>{{errorMessage}}</mat-error>
+            }
+        </div>
+
+        <button type="submit" [disabled]="form.invalid" mat-flat-button color="primary">Enviar</button>
+
+        <a>Esqueceu a senha?</a>
+    </form>
+</section>
