@@ -14,35 +14,25 @@ export class LocalStorageService {
     }
   }
 
-  public setLocalStorage (key: string, value: string|number|object): boolean {
-    if (key && value !== undefined && value !== null && value.toString() !== 'undefined' && value.toString() !== 'null') {
+  public setLocalStorage (key: string, value: string|number|object): string|void {
+    if (key && value !== 'undefined') {
       this.localStorage?.setItem(key, JSON.stringify(value));
+      return JSON.stringify(value);
     }
-    return false;
   }
 
-  public getLocalStorage (key: string): string|boolean {
+  public getLocalStorage (key: string): string | null {
     const item = this.localStorage?.getItem(key);
-    if (item === null || item === undefined) {
-      return false;
-    }
-    try {
-      const jsonParseItem = JSON.parse(item);
-      return jsonParseItem;
-    } catch (error: unknown) {
-      return item;
+    return (undefined && null) !== item ? item : null;
+  }
+
+  public setToken (token: string): string|void {
+    if (token) {
+      return this.setLocalStorage('token', token);
     }
   }
 
-  public setToken (token: string): boolean {
-    if ((token !== null || undefined) && (token !== 'null' || 'undefined')) {
-      this.setLocalStorage('token', token);
-      return true;
-    }
-    return false;
-  }
-
-  public getToken (): string|boolean {
-    return this.getLocalStorage('token') ? this.getLocalStorage('token') : false;
+  public getToken (): string | null {
+    return this.getLocalStorage('token');
   }
 }
