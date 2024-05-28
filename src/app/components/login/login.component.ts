@@ -15,4 +15,8 @@ export class LoginComponent {
     email: new FormControl('', [Validators.email]),
     password: new FormControl('')
   }, [Validators.required]);
+
+  login () {
+    // Handle form data
+  }
 }

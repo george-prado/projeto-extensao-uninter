@@ -60,6 +60,7 @@
         color: $grey-color;
         width: fit-content;
         transition: ease .3s;
+        cursor: pointer;
 
         &:hover{
             color: $blue-primary-color;
