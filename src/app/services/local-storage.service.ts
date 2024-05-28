@@ -14,25 +14,23 @@ export class LocalStorageService {
     }
   }
 
-  public setLocalStorage (key: string, value: string|number|object): string|void {
+  public setLocalStorage (key: string, value: string): string | void {
     if (key && value !== 'undefined') {
-      this.localStorage?.setItem(key, JSON.stringify(value));
-      return JSON.stringify(value);
+      this.localStorage?.setItem(key, value);
+      return value;
     }
   }
 
-  public getLocalStorage (key: string): string | null {
+  public getLocalStorage (key: string): string | void {
     const item = this.localStorage?.getItem(key);
-    return (undefined && null) !== item ? item : null;
+    return item ?? undefined;
   }
 
-  public setToken (token: string): string|void {
-    if (token) {
-      return this.setLocalStorage('token', token);
-    }
+  public setToken (token: string): string | void {
+    return this.setLocalStorage('token', token);
   }
 
-  public getToken (): string | null {
+  public getToken (): string | void {
     return this.getLocalStorage('token');
   }
 }
