@@ -18,7 +18,7 @@ export class HomeComponent {
   ) {}
 
   logout (): void {
-    this.localStorageService.setLocalStorage('token', '');
+    this.localStorageService.setToken('');
     this.router.navigate(['auth/login']);
   }
 }
