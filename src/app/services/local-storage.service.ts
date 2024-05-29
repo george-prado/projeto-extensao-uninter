@@ -14,14 +14,14 @@ export class LocalStorageService {
     }
   }
 
-  public setLocalStorage (key: string, value: string): string | void {
+  private setLocalStorage (key: string, value: string): string | void {
     if (key && value !== 'undefined') {
       this.localStorage?.setItem(key, value);
       return value;
     }
   }
 
-  public getLocalStorage (key: string): string | void {
+  private getLocalStorage (key: string): string | void {
     const item = this.localStorage?.getItem(key);
     return item ?? undefined;
   }
