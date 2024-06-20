@@ -1,32 +1,47 @@
 @import '../../../variables.scss';
 
-.button-row {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 40px;
+.homepage-header {
+  text-align: center;
+  margin: 2rem 0;
+
+  h2 {
+    font-size: 1.5rem;
+    color: $daycare-primary;
+    margin-bottom: 1rem;
+  }
 }
 
-.button-container {
+.homepage-intro {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 24px;
   background-color: $grey-color-lighter;
-  border-radius: 4px;
-  margin: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: $black-primary-color;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: justify;
+    padding-inline: 2rem;
+
+    .detach {
+      color: $blue-item-table-color;
+      font-weight: 600;
+    }
+  }
 }
 
-.mat-mdc-button:not(:disabled) {
-  color: $black-primary-color;
-  font-size: $button-font-size;
+.carousel-container {
+  margin: 2rem 0;
+  text-align: center;
 }
 
-.mat-mdc-button {
-  padding: 10px 20px;
-}
-
-.mat-mdc-button span {
-  margin-left: 15px;
-  margin-right: 5px;
-}
-
-.button-container button:hover mat-icon {
-  transform: scale(1.2);
-  transition: transform 0.5s ease;
+.calendar-container {
+  margin: 2rem 0;
+  text-align: center;
 }

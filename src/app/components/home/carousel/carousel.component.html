@@ -1,0 +1,17 @@
+<div class="carousel-container">
+  <div class="carousel-item" *ngFor="let item of items; let i = index" [class.active]="i === currentIndex">
+    <img [src]="item.imageUrl" [alt]="item.alt">
+  </div>
+
+  <div class="carousel-navigation">
+    <button mat-icon-button (click)="prev()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <div class="dots">
+      <button mat-button *ngFor="let item of items; let i = index" (click)="goTo(i)" [class.active]="i === currentIndex"></button>
+    </div>
+    <button mat-icon-button (click)="next()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+</div>

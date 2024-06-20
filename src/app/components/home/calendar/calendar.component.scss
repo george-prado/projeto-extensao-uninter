@@ -1,0 +1,37 @@
+@import '../../../../variables.scss';
+
+.calendar-container {
+  width: 50%;
+  margin: 0 auto 5rem auto;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    font-size: 1.5rem;
+    color: $daycare-primary;
+  }
+
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th, td {
+      border: 1px solid $grey-color-lighter;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: $daycare-primary;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: $grey-color-lighter;
+    }
+
+    tr:hover {
+      background-color: $grey-color;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<!-- galeria.component.html -->
+<div class="gallery-container">
+  <div class="gallery-row" *ngFor="let row of photoRows">
+    <img
+      *ngFor="let photo of row"
+      [src]="photo.url"
+      [alt]="photo.alt"
+      (click)="openDialog(photo)"
+      class="gallery-photo"
+    />
+  </div>
+</div>

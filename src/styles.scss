@@ -1,4 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.j-content {
+    &-evenly {
+      justify-content: space-evenly;
+    }
+    &-between {
+      justify-content: space-between;
+    }
+    &-around {
+      justify-content: space-around;
+    }
+    &-center {
+      justify-content: center;
+    }
+  }
+
+.a-items {
+  &-center {
+    align-items: center;
+  }
+}
+
+.full {
+  &-width { width: 100%; }
+  &-height { height: 100%; }
+}
+
+.mr {
+  &-1 {
+    margin-right: 5px;
+  }
+  &-2 {
+    margin-right: 20px;
+  }
+}
+
+.mb {
+  &-1 {
+    margin-bottom: 5px;
+  }
+}
+
+.gap {
+  gap: 12px;
+}
+
+.txt {
+  &-center {
+    text-align: center;
+  }
+}

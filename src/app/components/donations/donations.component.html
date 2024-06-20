@@ -1,0 +1,20 @@
+<div class="donations-container">
+  <h2>Ajude nossa creche a continuar seu trabalho!</h2>
+  <p>Nossa creche existe há 33 anos sem cobrar um centavo sequer! Dependemos da sua ajuda para continuar oferecendo comida, educação e cuidados para mais de 200 crianças carentes.</p>
+  <p>Possuímos veículo para coletar doações de alimentos e diversos materiais na região metropolitana de Goiânia. Entre em contato via (62) 3210-7436 e conversaremos melhor!</p>
+
+  <label for="button">Para doar qualquer quantia online, via PIX, clique no botão abaixo:</label>
+  <button mat-raised-button color="primary" (click)="openDialog()">Doe qualquer quantia</button>
+</div>
+
+<ng-template #dialog>
+  <div class="custom-dialog">
+    <div class="dialog-content">
+      <img src="../../../assets/imgs/donations/qrcode.png" alt="QR Code" class="qrcode-image">
+      <p>Escaneie o QR Code para doar.</p>
+    </div>
+    <div class="dialog-actions">
+      <button mat-raised-button color="accent" (click)="closeDialog()">Fechar</button>
+    </div>
+  </div>
+</ng-template>

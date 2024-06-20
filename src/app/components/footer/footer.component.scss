@@ -1,0 +1,37 @@
+.footer {
+  min-height: 25vh;
+  background-color: #e0f2f1;
+  padding-top: 20px;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+i {
+  color: #1976d2;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #0d47a1;
+  }
+}
+
+.footer-copyright {
+  font-size: 10px;
+  font-weight: bold;
+  color: #555;
+  margin-top: auto;
+
+  p {
+    margin: 0;
+  }
+}

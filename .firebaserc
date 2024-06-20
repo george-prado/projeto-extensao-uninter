@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "creche-casa-do-caminho"
+  },
+  "targets": {
+    "workshop-1106": {
+      "hosting": {
+        "dev": [
+          "dev-creche-casa-do-caminho"
+        ],
+        "prod": [
+          "creche-casa-do-caminho"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

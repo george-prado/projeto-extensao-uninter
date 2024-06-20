@@ -1,0 +1,17 @@
+<div class="calendar-container">
+  <h2>Datas e Avisos</h2>
+  <table class="calendar-table">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let date of importantDates">
+        <td>{{ date.date | date:'dd/MM' }}</td>
+        <td>{{ date.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
