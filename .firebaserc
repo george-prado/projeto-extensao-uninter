@@ -3,23 +3,13 @@
     "default": "creche-casa-do-caminho"
   },
   "targets": {
-    "workshop-1106": {
-      "hosting": {
-        "dev": [
-          "dev-creche-casa-do-caminho"
-        ],
-        "prod": [
-          "creche-casa-do-caminho"
-        ]
-      }
-    },
     "creche-casa-do-caminho": {
       "hosting": {
+        "dev": [
+          "dev-casa-do-caminho"
+        ],
         "prod": [
           "creche-casa-do-caminho"
-        ],
-        "dev": [
-          "dev-creche-casa-do-caminho"
         ]
       }
     }
