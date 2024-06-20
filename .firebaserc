@@ -12,6 +12,16 @@
           "creche-casa-do-caminho"
         ]
       }
+    },
+    "creche-casa-do-caminho": {
+      "hosting": {
+        "prod": [
+          "creche-casa-do-caminho"
+        ],
+        "dev": [
+          "dev-creche-casa-do-caminho"
+        ]
+      }
     }
   },
   "etags": {},
