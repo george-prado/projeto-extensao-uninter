@@ -1,11 +1,36 @@
-img {
-  &.logo {
-    margin-top: -4vh;
-    height: 27.5vh;
-    width: 20vw;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+
+  .logo {
+    img {
+      width: 20vw;
+      height: 27.5vh;
+      margin-top: -8vh;
+    }
+
+    .banner {
+      img {
+        height: 27.5vh;
+        width: 80vw;
+        max-width: 100%;
+        margin-top: 0;
+      }
+    }
   }
-  &.banner {
-    height: 27.5vh;
-    width: 80vw;
-  }
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 1vh; /* Ajuste conforme necessário */
+}
+
+.menu-buttons a {
+  max-width: 200px; /* Largura máxima dos botões */
+  flex: 1; /* Faz com que os botões cresçam igualmente */
 }
