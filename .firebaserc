@@ -6,10 +6,10 @@
     "creche-casa-do-caminho": {
       "hosting": {
         "dev": [
-          "dev-casa-do-caminho"
+          "${DEV_URL}"
         ],
         "prod": [
-          "creche-casa-do-caminho"
+          "${PROD_URL}"
         ]
       }
     }
