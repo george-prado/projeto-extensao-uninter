@@ -7,6 +7,9 @@ on:
 
 jobs:
   build_and_deploy:
+    environment:
+      name: firebase
+      url: "https://www.crechecasadocaminho.com.br"
     runs-on: ubuntu-latest
 
     steps:
@@ -32,4 +35,3 @@ jobs:
       - run: firebase deploy --only hosting:prod --token "$FIREBASE_TOKEN"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROD_URL: ${{ secrets.PROD_URL }}
