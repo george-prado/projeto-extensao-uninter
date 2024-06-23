@@ -25,12 +25,13 @@
 
 .menu-buttons {
   display: flex;
+  margin: 0 auto;
   justify-content: space-around;
-  width: 100vw;
-  margin-top: 1vh; /* Ajuste conforme necessário */
+  width: 62.5vw;
+  margin-top: 2vh;
 }
 
 .menu-buttons a {
-  max-width: 200px; /* Largura máxima dos botões */
-  flex: 1; /* Faz com que os botões cresçam igualmente */
+  max-width: 10rem;
+  flex: 1;
 }

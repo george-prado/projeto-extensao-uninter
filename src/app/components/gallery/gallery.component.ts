@@ -23,12 +23,18 @@ export interface DialogData {
 })
 export class GalleryComponent {
   photos: Photo[] = [
-    { url: '../../../assets/imgs/mosaic/1-placeholder.png', alt: 'Evento educativo 1' },
-    { url: '../../../assets/imgs/mosaic/2-placeholder.png', alt: 'Evento educativo 2' },
-    { url: '../../../assets/imgs/mosaic/3-placeholder.png', alt: 'Evento educativo 3' },
-    { url: '../../../assets/imgs/mosaic/4-placeholder.png', alt: 'Evento educativo 4' },
-    { url: '../../../assets/imgs/mosaic/5-placeholder.png', alt: 'Evento educativo 5' },
-    { url: '../../../assets/imgs/mosaic/6-placeholder.png', alt: 'Evento educativo 6' }
+    { url: '../../../assets/imgs/mosaic/1.png', alt: 'Evento educativo 1' },
+    { url: '../../../assets/imgs/mosaic/2.png', alt: 'Evento educativo 2' },
+    { url: '../../../assets/imgs/mosaic/3.png', alt: 'Evento educativo 3' },
+    { url: '../../../assets/imgs/mosaic/4.png', alt: 'Evento educativo 4' },
+    { url: '../../../assets/imgs/mosaic/5.png', alt: 'Evento educativo 5' },
+    { url: '../../../assets/imgs/mosaic/6.png', alt: 'Evento educativo 6' },
+    { url: '../../../assets/imgs/mosaic/7.png', alt: 'Evento educativo 7' },
+    { url: '../../../assets/imgs/mosaic/8.png', alt: 'Evento educativo 8' },
+    { url: '../../../assets/imgs/mosaic/9.png', alt: 'Evento educativo 9' },
+    { url: '../../../assets/imgs/mosaic/10.png', alt: 'Evento educativo 10' },
+    { url: '../../../assets/imgs/mosaic/11.png', alt: 'Evento educativo 11' },
+    { url: '../../../assets/imgs/mosaic/12.png', alt: 'Evento educativo 12' }
   ];
 
   photoRows: Photo[][] = [];

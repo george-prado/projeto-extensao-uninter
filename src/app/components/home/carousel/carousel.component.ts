@@ -26,16 +26,16 @@ interface CarouselItem {
 export class CarouselComponent implements OnInit, OnDestroy {
   items: CarouselItem[] = [
     {
-      imageUrl: '../../../assets/imgs/1-placeholder.png',
-      alt: 'Logo Placeholder 1'
+      imageUrl: '../../../assets/imgs/carousel/1.png',
+      alt: 'Imagem destaque 1'
     },
     {
-      imageUrl: '../../../assets/imgs/2-placeholder.png',
-      alt: 'Banner da Creche'
+      imageUrl: '../../../assets/imgs/carousel/2.png',
+      alt: 'Imagem destaque 2'
     },
     {
-      imageUrl: '../../../assets/imgs/3-placeholder.png',
-      alt: 'Logo Placeholder 3'
+      imageUrl: '../../../assets/imgs/carousel/3.png',
+      alt: 'Imagem destaque 3'
     }
   ];
 
