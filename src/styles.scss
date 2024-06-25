@@ -1,14 +1,21 @@
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Poppins", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
 }
 
+:root {
+  --mdc-protected-button-container-color: #004aad;
+  --mdc-protected-button-container-shape: 5rem;
+}
 
 /* Utility classes */
 .flex {
@@ -21,22 +28,22 @@ html, body {
 }
 
 .j-content {
-    &-evenly {
-      justify-content: space-evenly;
-    }
-    &-between {
-      justify-content: space-between;
-    }
-    &-around {
-      justify-content: space-around;
-    }
-    &-center {
-      justify-content: center;
-    }
-    &-end {
-      justify-content: flex-end;
-    }
+  &-evenly {
+    justify-content: space-evenly;
   }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+}
 
 .a-items {
   &-center {
@@ -45,8 +52,12 @@ html, body {
 }
 
 .full {
-  &-width { width: 100%; }
-  &-height { height: 100%; }
+  &-width {
+    width: 100%;
+  }
+  &-height {
+    height: 100%;
+  }
 }
 
 .mr {
@@ -74,7 +85,6 @@ html, body {
   }
 }
 
-
 /* Estilo da barra de rolagem para navegadores baseados em WebKit/Blink (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 8px; /* Largura da barra de rolagem */
@@ -83,6 +93,11 @@ html, body {
   background-color: #f1f1f1; /* Cor de fundo da área de track (trilha) */
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #2196F3; /* Cor do thumb (alça) */
+  background-color: #2196f3; /* Cor do thumb (alça) */
   border-radius: 4px; /* Borda arredondada do thumb */
+}
+
+
+::ng-deep mdc-protected-button-container-color {
+  color: red; /* Substitua "red" pela cor desejada */
 }

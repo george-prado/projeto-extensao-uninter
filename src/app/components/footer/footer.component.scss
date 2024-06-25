@@ -1,27 +1,32 @@
+@import "../../../variables.scss";
+
 .footer {
   min-height: 25vh;
   background-color: #e0f2f1;
   padding-top: 20px;
+  font-family: $daycare-font;
 }
 
 .footer-content {
   margin-bottom: 20px;
+  font-family: $daycare-font;
 }
 
 i {
-  color: #1976d2;
+  color: $daycare-blue;
   font-size: 18px;
   vertical-align: middle;
 }
 
 a {
-  color: #1976d2;
+  color: $daycare-blue;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+  font-family: $daycare-font;
 
   &:hover {
-    color: #0d47a1;
+    color: $daycare-blue;
   }
 }
 
@@ -30,6 +35,7 @@ a {
   font-weight: bold;
   color: #555;
   margin-top: auto;
+  font-family: $daycare-font;
 
   p {
     margin: 0;

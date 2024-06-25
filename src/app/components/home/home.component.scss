@@ -6,14 +6,16 @@
 
   h2 {
     font-size: 1.5rem;
-    color: $daycare-primary;
-    margin-bottom: 1rem;
+    color: $daycare-blue;
+    margin-bottom: 0;
+    font-family: $daycare-font;
+    font-weight: 700;
   }
 }
 
 .homepage-intro {
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 1rem auto 2rem auto;
   padding: 24px;
   background-color: $grey-color-lighter;
   border-radius: 12px;
@@ -28,10 +30,12 @@
     font-weight: 400;
     text-align: justify;
     padding-inline: 2rem;
+    font-family: $daycare-font;
 
     .detach {
-      color: $blue-item-table-color;
+      color: $daycare-blue-detach;
       font-weight: 600;
+      font-family: $daycare-font;
     }
   }
 }

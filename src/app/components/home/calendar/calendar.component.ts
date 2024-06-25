@@ -17,6 +17,6 @@ interface ImportantDate {
 })
 export class CalendarComponent {
   importantDates: ImportantDate[] = [
-    { date: '2024-06-20', description: 'Lançamento do nosso site' }
+    { date: '2024-06-22', description: 'Lançamento do nosso site' }
   ];
 }

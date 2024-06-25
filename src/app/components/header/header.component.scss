@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,7 +11,8 @@
     img {
       width: 20vw;
       height: 27.5vh;
-      margin-top: -8vh;
+      margin-left: 6rem;
+      scale: 1.25;
     }
 
     .banner {
@@ -34,4 +37,7 @@
 .menu-buttons a {
   max-width: 10rem;
   flex: 1;
+  font-family: $daycare-font;
+  font-size: .8rem;
+  color: #fff;
 }

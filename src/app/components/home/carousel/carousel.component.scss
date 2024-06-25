@@ -1,3 +1,5 @@
+@import '../../../../variables.scss';
+
 .carousel-container {
   position: relative;
   width: 100%;
@@ -33,12 +35,13 @@
       transition: color 0.3s;
 
       mat-icon {
-        font-size: 32px;
-        color: #3f51b5; /* Cor do tema primário do Angular Material */
+        font-size: 24px;
+        color: $daycare-blue;
       }
 
-      &:hover mat-icon {
-        color: #303f9f; /* Cor mais escura do tema primário para hover */
+      &:hover {
+        color: $daycare-blue;
+        background-color: $daycare-hover-blue-transparent;
       }
 
       &.active {

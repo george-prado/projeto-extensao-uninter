@@ -7,22 +7,27 @@
 
   h2 {
     font-size: 1.5rem;
-    color: $daycare-primary;
+    color: $daycare-blue;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
   }
 
   .calendar-table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
     margin-top: 20px;
+    margin-inline: auto;
+    font-family: "Inter", sans-serif;
+
 
     th, td {
       border: 1px solid $grey-color-lighter;
       padding: 10px;
-      text-align: left;
+      text-align: center;
     }
 
     th {
-      background-color: $daycare-primary;
+      background-color: $daycare-blue;
       color: white;
     }
 
@@ -31,7 +36,7 @@
     }
 
     tr:hover {
-      background-color: $grey-color;
+      background-color: $daycare-hover-blue-transparent;
     }
   }
 }
